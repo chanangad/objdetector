@@ -13,6 +13,8 @@ import pickle
 from PIL import Image
 #CvFont font = fontQt(''Times'')
 
+
+
 def background_subtract(filename):
 	cap = cv2.VideoCapture(filename)
 	fgbg = cv2.createBackgroundSubtractorMOG2(history=500,varThreshold = 30, detectShadows = True)
